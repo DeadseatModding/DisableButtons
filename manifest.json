@@ -1,0 +1,81 @@
+{
+	"name": "DisableButtons",
+	"namespace": "ZackeryRSmith",
+	"version_number": "1.0.0",
+	"description": "This isn't useful, why did you install this?",
+	"website_url": "https://github.com/DeadseatModding/DisableButtons",
+	"dependencies": [],
+	"extra": {
+		"godot": {
+			"authors": ["ZackeryRSmith"],
+			"description_rich": "",
+			"compatible_mod_loader_version": ["7.0.1"],
+			"compatible_game_version": ["0.0.0"],
+			"config_schema": {
+				"title": "Config",
+				"description": "Config for this Mod",
+				"type": "object",
+				"properties": {
+					"main_menu": {
+						"title": "Main Menu",
+						"type": "object",
+						"properties": {
+							"button_start": {
+								"title": "Start Button",
+								"type": "boolean",
+								"default": true,
+							},
+							"button_hardmode": {
+								"title": "Hardmode Button",
+								"type": "boolean",
+								"default": true,
+							},
+							"button_challenge": {
+								"title": "Challenge Button",
+								"type": "boolean",
+								"default": true,
+							},
+							"button_mods": {
+								"title": "Mods Button ([color=red]NOT RECOMMENDED[/color])",
+								"type": "boolean",
+								"default": true,
+							},
+							"button_options": {
+								"title": "Options Button",
+								"type": "boolean",
+								"default": true,
+							},
+							"button_exit": {
+								"title": "Exit Button",
+								"type": "boolean",
+								"default": true,
+							},
+							"social": {
+								"title": "Social",
+								"type": "object",
+								"properties": {
+									"external_steam": {
+										"title": "Steam Button",
+										"description": "Hidden by default... Here for completeness",
+										"type": "boolean",
+										"default": true,
+									},
+									"external_ftp": {
+										"title": "FTP Button",
+										"type": "boolean",
+										"default": true,
+									},
+									"external_discord": {
+										"title": "Discord Button",
+										"type": "boolean",
+										"default": true,
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
