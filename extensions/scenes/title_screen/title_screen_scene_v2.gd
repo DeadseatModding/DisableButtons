@@ -1,14 +1,14 @@
 extends "res://scenes/title_screen/title_screen_scene_v2.gd"
 
-const MOD_ID = "ZackeryRSmith-ParentalControls"
-const LOG_NAME = "ZackeryRSmith-ParentalControls:TitleScreen"
+const MOD_ID = "ZackeryRSmith-DisableButtons"
+const LOG_NAME = "ZackeryRSmith-DisableButtons:TitleScreen"
 
 
 func _ready():
-	var parental_controls = get_node("/root/ModLoader/" + MOD_ID)
-	if not is_instance_valid(parental_controls):
+	var mod = get_node("/root/ModLoader/" + MOD_ID)
+	if not is_instance_valid(mod):
 		return
-	parental_controls.reload_config.connect(_apply_config)
+	mod.reload_config.connect(_apply_config)
 	
 	super()
 	

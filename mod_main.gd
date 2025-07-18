@@ -4,8 +4,8 @@ extends Node
 signal reload_config(config: ModConfig)
 #endregion
 
-const MOD_DIR := "ZackeryRSmith-ParentalControls"
-const LOG_NAME := "ZackeryRSmith-ParentalControls:Main"
+const MOD_DIR := "ZackeryRSmith-DisableButtons"
+const LOG_NAME := "ZackeryRSmith-DisableButtons:Main"
 
 var mod_dir_path := ModLoaderMod.get_unpacked_dir().path_join(MOD_DIR)
 var extensions_dir_path = mod_dir_path.path_join("extensions")
